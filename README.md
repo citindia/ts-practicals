@@ -1,4 +1,6 @@
-# ts-practicals
+# TypeScript Practicals
+
+A comprehensive collection of TypeScript exercises covering fundamental programming concepts, data structures, functions, and advanced features.
 
 ## Practical 1
 
