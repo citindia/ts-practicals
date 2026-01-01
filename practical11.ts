@@ -43,7 +43,7 @@ switch (user.role) {
 
   case "user":
     console.log(
-      `Hello ${user.name}! You have edit and view only access of the application.`,
+      `Hello ${user.name}! You have view only access of the application.`,
     );
     break;
 

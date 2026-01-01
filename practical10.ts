@@ -44,7 +44,7 @@ if (user.role === "admin" || user.role === "editor" || user.role === "user") {
 
   if (user.role === "user") {
     console.log(
-      `Hello ${user.name}! You have edit and view only access of the application.`,
+      `Hello ${user.name}! You have view only access of the application.`,
     );
   }
 } else {
