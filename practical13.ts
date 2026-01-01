@@ -24,14 +24,14 @@ Steps:
    - Format: "Hello [userName] from Arrow Function"
 */
 
-function normalFunc(useName: string) {
-  console.log(`Hello ${useName} from Normal Function`);
+function normalFunc(userName: string) {
+  console.log(`Hello ${userName} from Normal Function`);
 }
 
 normalFunc("Your Name");
 
-const arrowFunc = (useName: string) => {
-  console.log(`Hello ${useName} from Arrow Function`);
+const arrowFunc = (userName: string) => {
+  console.log(`Hello ${userName} from Arrow Function`);
 };
 
 arrowFunc("Your Name");

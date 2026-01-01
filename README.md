@@ -319,3 +319,138 @@ Display personalized messages in the terminal.
 ### Preview:
 
 ![Practical 11 Preview](previews/practical10-11.png)
+
+---
+
+## Practical 12
+
+Create a multiplication table (1 to 10) using a for loop.
+Use a constant to store the base number for the table.
+The table will be automatically calculated using iteration.
+Display the formatted multiplication table in the terminal using only one console.log() call.
+
+### Steps:
+
+1. Create a variable called "number" to store the base number for the multiplication table
+   This variable determines which multiplication table to generate (e.g., 2 for 2's table)
+
+2. Use a for loop to generate the multiplication table:
+   - Initialize: let tableIndex = 1 (starts from 1)
+   - Condition: tableIndex <= 10 (continues until 10)
+   - Increment: tableIndex++ (increases by 1 each iteration)
+   - Loop body: calculate and display each multiplication result
+
+3. Display each multiplication result using console.log() inside the loop:
+   - Use template strings to format each line as "2 X 1 = 2"
+   - Only one console.log() statement is used, but it runs 10 times due to the loop
+   - Output format: "number X tableIndex = result"
+
+### Preview:
+
+![Practical 12 Preview](previews/practical5-12-14.png)
+
+---
+
+## Practical 13
+
+Create two types of functions: a normal function and an arrow function.
+Both functions will accept a parameter called "userName" and display personalized messages.
+Compare the syntax differences between normal and arrow functions.
+Display the output in the terminal with function type identification.
+
+### Steps:
+
+1. Create a normal function named "normalFunc":
+   - Use the function keyword with traditional syntax
+   - Accept a parameter "userName" with type annotation (string)
+   - Display a message indicating it's from a normal function
+
+2. Create an arrow function named "arrowFunc":
+   - Use const with arrow function syntax (=>)
+   - Accept the same parameter "userName" with type annotation
+   - Display a message indicating it's from an arrow function
+
+3. Call both functions with sample names:
+   - Pass a string argument to each function
+   - Observe that both produce similar output but with different syntax
+
+4. Display results using template strings:
+   - Format: "Hello [userName] from Normal Function"
+   - Format: "Hello [userName] from Arrow Function"
+
+### Preview:
+
+![Practical 13 Preview](previews/practical13.png)
+
+---
+
+## Practical 14
+
+Create a flexible multiplication table generator function.
+The function accepts two parameters: table number and table length.
+Based on these parameters, the function generates a customizable multiplication table.
+Display the output in the terminal with formatted multiplication results.
+
+### Steps:
+
+1. Create an arrow function named "tableGenerator":
+   - Accept two parameters: number (base number) and length (table size)
+   - Both parameters have type annotation (number)
+   - Use arrow function syntax with const assignment
+
+2. Implement the table generation logic inside the function:
+   - Use a for loop to iterate from 1 to the specified length
+   - Calculate multiplication: number × tableIndex
+   - Display each result using console.log() with template strings
+
+3. Call the function with custom parameters:
+   - Pass any number as the first parameter (e.g., 3 for 3's table)
+   - Pass any length as the second parameter (e.g., 20 for 20 lines)
+   - The function will generate a table of the specified size
+
+4. Display results using template strings:
+   - Format: "number X tableIndex = result"
+   - Each line shows the multiplication equation and result
+
+### Preview:
+
+![Practical 14 Preview](previews/practical5-12-14.png)
+
+---
+
+## Practical 15
+
+Create an advanced discount calculator using arrays and functions.
+Store the discount rate and product data in separate variables.
+The product data is an array of objects, each containing name and price.
+Create a discount calculator function to calculate discounted prices.
+Use array.map() to apply the discount function to each product.
+Display formatted results in the terminal.
+
+### Steps:
+
+1. Create a variable for discount rate:
+   - Store the discount percentage (e.g., 20 for 20%)
+
+2. Create an array of product objects:
+   - Each object has two properties: name (string) and price (number)
+   - Contains multiple products like Laptop, Headphone, Speaker
+
+3. Create a discount calculator arrow function:
+   - Accept three parameters: discount, productName, productPrice
+   - Calculate discount amount: (productPrice \* discount) / 100
+   - Calculate final price: productPrice - discountAmount
+   - Display formatted result using console.log()
+
+4. Use array.map() to process all products:
+   - Iterate through each product in productData array
+   - Use object destructuring ({ name, price }) to extract properties
+   - Call discountCalculator for each product
+
+5. Display results using template strings:
+   - Show flat discount rate first
+   - Format: "ProductName: price/- (Discount: - discountAmount/-) = finalPrice/-"
+
+### Preview:
+
+![Practical 15 Preview](previews/practical7-15.png)
