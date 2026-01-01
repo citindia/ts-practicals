@@ -43,8 +43,6 @@ let studentData = [
   },
 ];
 
-console.log();
-
 const resultGenerator = (
   studentName: string,
   studentAge: number,

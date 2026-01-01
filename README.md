@@ -454,3 +454,171 @@ Display formatted results in the terminal.
 ### Preview:
 
 ![Practical 15 Preview](previews/practical7-15.png)
+
+---
+
+## Practical 16
+
+Create a student result generator using arrays and conditional logic.
+Store student data in an array of objects, each containing name, age, and mark.
+Create a result generator function to determine pass/fail status based on marks.
+Use array.map() to generate results for each student in the array.
+Display personalized pass/fail messages with age information.
+
+### Steps:
+
+1. Create an array of student objects:
+   - Each object has three properties: name (string), age (number), mark (number)
+   - Contains multiple students with their respective data
+
+2. Create a result generator arrow function:
+   - Accept three parameters: studentName, studentAge, studentMark
+   - Use conditional logic (if-else) to check pass/fail status
+   - Passing mark threshold is 35
+
+3. Implement pass/fail logic:
+   - If studentMark >= 35: student passed the exam
+   - If studentMark < 35: student failed the exam
+   - Include age information in the message
+
+4. Use array.map() to process all students:
+   - Iterate through each student in studentData array
+   - Use object destructuring ({ name, age, mark }) to extract properties
+   - Call resultGenerator for each student
+
+5. Display personalized results using template strings:
+   - Format: "Congratulation [name]! At the age of [age], you passed the EXAM."
+   - Format: "Sorry [name]! At the age of [age], you failed the EXAM."
+
+### Preview:
+
+![Practical 16 Preview](previews/practical16.png)
+
+---
+
+## Practical 17
+
+Create a delayed user information display system.
+Store user details in an object with personal information.
+Create a delay timer to control when the user details are shown.
+Use setTimeout() to display user information after a specified delay.
+Display countdown message and formatted user details in the terminal.
+
+### Steps:
+
+1. Create a user object with properties:
+   - fullName: stores the person's full name
+   - age: stores the person's age
+   - gender: stores the person's gender
+   - phoneNumber: stores the person's phone number
+
+2. Create a delay time variable:
+   - Store delay time in milliseconds (e.g., 2000 for 2 seconds)
+   - This controls how long to wait before showing user details
+
+3. Display initial messages:
+   - Show countdown message indicating delay duration
+   - Display separator line for better formatting
+
+4. Use setTimeout() for delayed execution:
+   - Pass an arrow function as the first parameter
+   - Pass delayTime as the second parameter
+   - The function will execute after the specified delay
+
+5. Display user details after delay using template strings:
+   - Access object properties using dot notation
+   - Format: "Full Name: [fullName]", "Age: [age]", etc.
+   - Each detail is shown on a separate line
+
+### Preview:
+
+![Practical 17 Preview](previews/practical17.png)
+
+---
+
+## Practical 18
+
+Create an automated counter system with customizable range and interval.
+Set start count, end count, and interval time variables.
+Use setInterval() to display each count at specified intervals.
+Automatically stop counting when reaching the end count.
+Display counting progress in the terminal with formatted output.
+
+### Steps:
+
+1. Create counting range variables:
+   - startCount: the number to start counting from
+   - endCount: the number to stop counting at
+   - intervalTime: time between each count in milliseconds
+
+2. Display initial messages:
+   - Show the counting range (start to end)
+   - Display separator line for better formatting
+
+3. Create a counter variable:
+   - Initialize with startCount value
+   - This variable will increment during counting
+
+4. Use setInterval() for repeated execution:
+   - Pass an arrow function as the first parameter
+   - Pass intervalTime as the second parameter
+   - Store the interval ID for later cleanup
+
+5. Implement counting logic inside the interval:
+   - Check if current count is less than or equal to endCount
+   - If true: display current count and increment counter
+   - If false: stop the interval using clearInterval()
+   - This prevents infinite loops after reaching the target
+
+6. Display formatted count using template strings:
+   - Format: "Count: [currentNumber]"
+   - Each count appears after the specified interval time
+
+### Preview:
+
+![Practical 18 Preview](previews/practical18.png)
+
+---
+
+## Practical 19
+
+Create an advanced multiplication table generator with timed intervals.
+The function accepts three parameters: table number, table length, and interval time.
+Generate multiplication table based on number and length parameters.
+Display each multiplication result at specified time intervals.
+Automatically stop when reaching the table length.
+
+### Steps:
+
+1. Create a table generator arrow function:
+   - Accept three parameters: number (base number), length (table size), intervalTime (delay)
+   - All parameters have type annotation (number)
+   - Use arrow function syntax with const assignment
+
+2. Initialize index variable:
+   - Start with index = 1 for first multiplication
+   - This variable will increment during table generation
+
+3. Display initial messages:
+   - Show table number and length information
+   - Display interval time in seconds for user understanding
+   - Add separator line for better formatting
+
+4. Use setInterval() for timed table generation:
+   - Pass an arrow function as the first parameter
+   - Pass intervalTime as the second parameter
+   - Store the interval ID for later cleanup
+
+5. Implement table generation logic:
+   - Check if current index is less than or equal to length
+   - If true: display multiplication result and increment index
+   - If false: stop the interval using clearInterval()
+   - This prevents infinite loops after completing the table
+
+6. Display formatted multiplication results:
+   - Format: "number X index = result"
+   - Each line appears after the specified interval time
+
+### Preview:
+
+![Practical 19 Preview](previews/practical19.png)

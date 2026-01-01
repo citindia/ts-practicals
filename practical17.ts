@@ -40,8 +40,6 @@ let userObject = {
 
 let delayTime = 2000;
 
-console.log();
-
 console.log(`Your details will be shown in ${delayTime / 1000} seconds.`);
 console.log("-----------------------------------------");
 
